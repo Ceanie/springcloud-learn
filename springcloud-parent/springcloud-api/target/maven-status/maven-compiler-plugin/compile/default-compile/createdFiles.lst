@@ -1,0 +1,4 @@
+xyz/ceanie/entity/Depts.class
+xyz/ceanie/service/DeptClientService.class
+xyz/ceanie/service/DeptClientServiceFallBackFactory.class
+xyz/ceanie/service/DeptClientServiceFallBackFactory$1.class

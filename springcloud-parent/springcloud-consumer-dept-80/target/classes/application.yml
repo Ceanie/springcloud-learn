@@ -1,0 +1,14 @@
+#REST_URL_PREFIX: http://localhost:8001
+REST_URL_PREFIX: http://MICROSESPRINGCLOUD-DEPT
+
+server:
+  port: 80
+
+eureka:
+  client:
+    register-with-eureka: false #表示自己不想注册中进行注册自己
+    service-url:
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka #设置Eureka server 互交的地址，查询服务注册中心都需要这个地址
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
+

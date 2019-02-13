@@ -1,0 +1,29 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka #注入的地址 必须和7001中的地址一致
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zuul-9527
+    prefer-ip-address: true #显示ip地址
+
+
+info:
+  app.name: springcloud-learn  #工程名称
+  company.name: www.ceanie.xyz  #公司名称
+  build.artifactId: $project.artifactId$ #调用父工程build
+  build.version: $project.version$
+
+zuul:
+  routes:
+   mydept.serviceId: microsespringcloud-dept  #代理的微服务的名称
+   mydept.path: /myspringcloud/**    # 修改代理访问名称
+  ignored-services: "*"  #忽略这个微服务的名称,*表示全部,若是单个写中间用逗号隔开
+  prefix: /spring  #前缀

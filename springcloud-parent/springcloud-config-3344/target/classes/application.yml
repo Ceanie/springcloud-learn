@@ -1,0 +1,17 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microsespringcloud-config   #对外曝光的微服务的名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Ceanie/springcloud-config.git
+
+info:
+ app.name: springcloud-learn  #工程名称
+ company.name: www.ceanie.xyz  #公司名称
+ build.artifactId: $project.artifactId$ #调用父工程build
+ build.version: $project.version$

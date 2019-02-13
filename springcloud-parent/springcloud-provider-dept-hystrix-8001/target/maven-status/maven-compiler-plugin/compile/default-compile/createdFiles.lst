@@ -1,0 +1,5 @@
+xyz/ceanie/controller/DeptController.class
+xyz/ceanie/DeptProvider_Hystrix_8001_Spring.class
+xyz/ceanie/dao/DeptDao.class
+xyz/ceanie/service/impl/DeptServiceImpl.class
+xyz/ceanie/service/DeptService.class

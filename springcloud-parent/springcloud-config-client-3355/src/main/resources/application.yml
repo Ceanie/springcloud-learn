@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: deptspringcloud-config-spring-dev-client

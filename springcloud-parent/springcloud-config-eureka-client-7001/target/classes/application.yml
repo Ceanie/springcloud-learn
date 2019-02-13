@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: chservicecloud-config-client-eureka-client

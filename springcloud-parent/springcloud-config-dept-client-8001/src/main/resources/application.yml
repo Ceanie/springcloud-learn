@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: chserivcecloud-config-dept-client                
